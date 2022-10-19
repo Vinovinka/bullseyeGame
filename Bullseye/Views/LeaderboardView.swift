@@ -16,7 +16,7 @@ struct LeaderboardView: View {
                 LabelView()
                 ScrollView {
                     VStack {
-                        ForEach(game.leaderboardEntries.indices) { i in
+                        ForEach(game.leaderboardEntries.indices, id: \.self) { i in
                             let leaderboardEntry = game.leaderboardEntries[i]
                             RowView(
                                 index: i,
