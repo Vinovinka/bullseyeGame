@@ -15,6 +15,7 @@ class BaseTestCase: XCTestCase {
     }
 
     override func tearDown() {
+        app.terminate()
         super.tearDown()
     }
 

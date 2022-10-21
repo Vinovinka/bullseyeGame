@@ -21,7 +21,9 @@ struct PointsView: View {
         VStack(spacing: 10) {
             InstructionText(text: "The slider's value is")
             BigNumberText(text: String(roundedValue))
+                .accessibilityIdentifier("sliderValue")
             BodyText(text: "You scored \(points) Points\n 🎉🎉🎉")
+                .accessibilityIdentifier("yourScoreLabel")
 
             Button (action: {
                 withAnimation {
@@ -32,6 +34,7 @@ struct PointsView: View {
             }){
                 ButtonText(text: "Start New Round")
             }
+            .accessibilityIdentifier("startNewRowndButton")
         }
         .padding()
         .frame(maxWidth: 300)
@@ -39,6 +42,8 @@ struct PointsView: View {
         .cornerRadius(Constants.General.roundRectCornerRadius)
         .shadow(radius: 10, x: 5, y: 5)
         .transition(.scale)
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("alertView")
     }
 }
 

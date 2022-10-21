@@ -25,6 +25,7 @@ struct HitMeButtonView: View {
                     .bold()
                     .font(.title3)
             }
+
             .padding(15.0)
             .background(
                 ZStack {
@@ -38,7 +39,7 @@ struct HitMeButtonView: View {
                 RoundedRectangle(cornerRadius: 15.0)
                     .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth)
             )
-
+            .accessibilityIdentifier("hitMeButton")
         }
     }
 }
