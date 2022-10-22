@@ -30,6 +30,8 @@ struct ContentView: View {
                     .transition(.scale)
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("backgroundView")
     }
 }
 
@@ -44,6 +46,7 @@ struct InstructionView: View {
                 .padding(.trailing, 30.0)
 
             BigNumberText(text: String(game.target))
+                .accessibilityIdentifier("requestedNumberValue")
         }
     }
 }

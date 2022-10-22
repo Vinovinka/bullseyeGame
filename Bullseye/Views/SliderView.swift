@@ -16,6 +16,7 @@ struct SliderView: View {
             SliderLabelText(text: "1")
 
             Slider(value: $sliderValue, in: 1.0...100.0)
+                .accessibilityIdentifier("slider")
 
             SliderLabelText(text: "100")
         }
