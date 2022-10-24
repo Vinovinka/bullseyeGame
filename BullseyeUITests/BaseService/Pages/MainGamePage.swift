@@ -9,4 +9,5 @@ class MainGamePage: CustomUIElement {
     lazy var slider = rootElement.sliders["slider"]
     lazy var requestedSliderValue = rootElement.staticTexts["requestedNumberValue"]
     lazy var yourScoreLabel = rootElement.staticTexts["yourScoreLabel"]
+    lazy var leaderboardButton = rootElement.buttons["leaderboardButton"]
 }

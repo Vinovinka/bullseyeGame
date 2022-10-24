@@ -31,6 +31,7 @@
 		E2F1DE3D2902786E00629924 /* GameSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE3C2902786E00629924 /* GameSteps.swift */; };
 		E2F1DE402902B87A00629924 /* Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE3F2902B87A00629924 /* Matchers.swift */; };
 		E2F1DE422902BDE000629924 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE412902BDE000629924 /* Report.swift */; };
+		E2F1DE442905762F00629924 /* LeaderboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE432905762F00629924 /* LeaderboardPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E2F1DE3C2902786E00629924 /* GameSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSteps.swift; sourceTree = "<group>"; };
 		E2F1DE3F2902B87A00629924 /* Matchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchers.swift; sourceTree = "<group>"; };
 		E2F1DE412902BDE000629924 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		E2F1DE432905762F00629924 /* LeaderboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				E2F1DE392902766A00629924 /* MainGamePage.swift */,
+				E2F1DE432905762F00629924 /* LeaderboardPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				E2F1DE3D2902786E00629924 /* GameSteps.swift in Sources */,
 				E2F1DE342902729300629924 /* ElementExtensions.swift in Sources */,
 				E2F1DE2128FFD97B00629924 /* BullseyeUITests.swift in Sources */,
+				E2F1DE442905762F00629924 /* LeaderboardPage.swift in Sources */,
 				E2F1DE322902722200629924 /* CustomUIElement.swift in Sources */,
 				E2F1DE36290272FA00629924 /* Timeout.swift in Sources */,
 			);
