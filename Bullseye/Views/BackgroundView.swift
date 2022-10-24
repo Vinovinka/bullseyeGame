@@ -35,6 +35,7 @@ struct TopView: View {
             }) {
                 RoundedImageViewFilled(systemName: "list.dash")
             }
+            .accessibilityIdentifier("leaderboardButton")
             .sheet(isPresented: $leaderboardIsShowing, onDismiss: {}, content: {
                 LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing, game: $game)
             })

@@ -14,4 +14,8 @@ class GameSteps {
 
         mainGamePage.hitMeButton.tap()
     }
+
+    func openLeaderboard() {
+        mainGamePage.leaderboardButton.tap()
+    }
 }

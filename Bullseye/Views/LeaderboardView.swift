@@ -24,8 +24,12 @@ struct LeaderboardView: View {
                                 date: leaderboardEntry.date)
                         }
                     }
+                    .accessibilityElement(children: .contain)
+                    .accessibilityIdentifier("leaderboardTable")
                 }
             }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("leaderboardView")
         }
     }
 }
@@ -66,7 +70,6 @@ struct HeaderView: View {
     var body: some View {
         ZStack {
             HStack {
-
                 if verticalSizeClass == .regular && horizontalSizeClass == .compact {
                     BigBoldText(text: "Leaderboard")
                         .padding(.leading)
@@ -84,6 +87,7 @@ struct HeaderView: View {
                     RoundedImageViewFilled(systemName: "xmark")
                         .padding(.trailing)
                 }
+                .accessibilityIdentifier("closeButton")
             }
             .padding()
         }
