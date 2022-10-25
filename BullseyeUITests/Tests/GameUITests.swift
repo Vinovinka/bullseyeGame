@@ -8,10 +8,20 @@ class GameUITests: BaseTestCase {
 
     func testHitMeButton() {
 
-        gameSteps.newGame()
-        
+        Report.step("Start new game") {
+            gameSteps.newGame()
+        }
+
         Report.step("Check your points") {
-            checkElementContainsText(mainGamePage.yourScoreLabel, "You scored 14")
+            checkElementContainsText(mainGamePage.yourScoreLabel, "You scored ")
+        }
+
+        Report.step("Tap to Start new round button") {
+            mainGamePage.startNewRowndButton.tap()
+        }
+
+        Report.step("Check that new round value is 2") {
+            checkElementContainsText(mainGamePage.roundLabel, "ROUND, 2")
         }
     }
 

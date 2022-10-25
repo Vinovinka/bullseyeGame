@@ -10,4 +10,6 @@ class MainGamePage: CustomUIElement {
     lazy var requestedSliderValue = rootElement.staticTexts["requestedNumberValue"]
     lazy var yourScoreLabel = rootElement.staticTexts["yourScoreLabel"]
     lazy var leaderboardButton = rootElement.buttons["leaderboardButton"]
+    lazy var startNewRowndButton = rootElement.buttons["startNewRowndButton"]
+    lazy var roundLabel = rootElement.staticTexts["roundValue"]
 }

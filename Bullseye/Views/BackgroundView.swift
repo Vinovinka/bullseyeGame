@@ -63,11 +63,11 @@ struct BottomView: View {
     var body: some View {
         HStack {
             NumberView(title: "Score", text: String(game.score))
-                .accessibilityElement(children: .ignore)
+                .accessibilityElement(children: .combine)
                 .accessibilityIdentifier("scoreValue")
             Spacer()
             NumberView(title: "Round", text: String(game.round))
-                .accessibilityElement(children: .ignore)
+                .accessibilityElement(children: .combine)
                 .accessibilityIdentifier("roundValue")
         }
     }
