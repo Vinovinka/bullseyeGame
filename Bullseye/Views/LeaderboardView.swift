@@ -22,6 +22,8 @@ struct LeaderboardView: View {
                                 index: i,
                                 score: leaderboardEntry.score,
                                 date: leaderboardEntry.date)
+                            .accessibilityElement(children: .combine)
+                            .accessibilityIdentifier("leaderboardRow")
                         }
                     }
                     .accessibilityElement(children: .contain)

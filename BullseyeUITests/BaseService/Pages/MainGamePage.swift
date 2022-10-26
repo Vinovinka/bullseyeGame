@@ -12,4 +12,5 @@ class MainGamePage: CustomUIElement {
     lazy var leaderboardButton = rootElement.buttons["leaderboardButton"]
     lazy var startNewRowndButton = rootElement.buttons["startNewRowndButton"]
     lazy var roundLabel = rootElement.staticTexts["roundValue"]
+    lazy var scoreLabel = rootElement.staticTexts["scoreValue"]
 }

@@ -39,4 +39,28 @@ class GameUITests: BaseTestCase {
             checkElementExists(leaderboardPage.closeButton)
         }
     }
+
+    func testLeaderboardWithScore() {
+
+        Report.step("Start new game") {
+            gameSteps.newGame()
+        }
+
+        Report.step("Tap to Start new round button") {
+            mainGamePage.startNewRowndButton.tap()
+        }
+
+        Report.step("Go to Leaderboard") {
+            mainGamePage.leaderboardButton.tap()
+        }
+
+        Report.step("Checking the Leaderboard") {
+            checkElementExists(leaderboardPage.leaderboardRow)
+        }
+
+        Report.step("Checking the round") {
+            checkElementContainsText(leaderboardPage.leaderboardRow, "0")
+        }
+
+    }
 }
