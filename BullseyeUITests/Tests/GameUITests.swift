@@ -8,10 +8,20 @@ class GameUITests: BaseTestCase {
 
     func testHitMeButton() {
 
-        gameSteps.newGame()
-        
+        Report.step("Start new game") {
+            gameSteps.newGame()
+        }
+
         Report.step("Check your points") {
-            checkElementContainsText(mainGamePage.yourScoreLabel, "You scored 14")
+            checkElementContainsText(mainGamePage.yourScoreLabel, "You scored ")
+        }
+
+        Report.step("Tap to Start new round button") {
+            mainGamePage.startNewRowndButton.tap()
+        }
+
+        Report.step("Check that new round value is 2") {
+            checkElementContainsText(mainGamePage.roundLabel, "ROUND, 2")
         }
     }
 
@@ -28,5 +38,29 @@ class GameUITests: BaseTestCase {
         Report.step("Checking the Leaderboard close button") {
             checkElementExists(leaderboardPage.closeButton)
         }
+    }
+
+    func testLeaderboardWithScore() {
+
+        Report.step("Start new game") {
+            gameSteps.newGame()
+        }
+
+        Report.step("Tap to Start new round button") {
+            mainGamePage.startNewRowndButton.tap()
+        }
+
+        Report.step("Go to Leaderboard") {
+            mainGamePage.leaderboardButton.tap()
+        }
+
+        Report.step("Checking the Leaderboard") {
+            checkElementExists(leaderboardPage.leaderboardRow)
+        }
+
+        Report.step("Checking the round") {
+            checkElementContainsText(leaderboardPage.leaderboardRow, "0")
+        }
+
     }
 }
