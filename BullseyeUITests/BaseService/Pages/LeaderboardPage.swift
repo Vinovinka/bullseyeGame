@@ -6,5 +6,5 @@ class LeaderboardPage: CustomUIElement {
     }
 
     lazy var closeButton = rootElement.buttons["closeButton"]
-    lazy var leaderboardRow = rootElement.staticTexts["leaderboardRow"]
+    lazy var leaderboardRow = rootElement.staticTexts["leaderboardRow.0"]
 }
