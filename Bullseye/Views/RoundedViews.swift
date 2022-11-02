@@ -13,7 +13,7 @@ struct RoundedImageViewStroked: View {
 
     var body: some View {
         Image(systemName: systemName)
-            .font(.title)
+            .font(.title2)
             .foregroundColor(Color("TextColor"))
             .frame(width: Constants.General.roundedViewLength,
                    height: Constants.General.roundedViewLength)
@@ -32,7 +32,7 @@ struct RoundedImageViewFilled: View {
 
     var body: some View {
         Image(systemName: systemName)
-            .font(.title)
+            .font(.title2)
             .foregroundColor(Color("ButtonFilledTextColor"))
             .frame(width: Constants.General.roundedViewLength,
                    height: Constants.General.roundedViewLength)
