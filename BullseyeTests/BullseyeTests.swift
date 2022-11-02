@@ -62,4 +62,13 @@ final class BullseyeTests: XCTestCase {
         XCTAssertEqual(game.leaderboardEntries[1].score, 300)
     }
 
+    func testCleanLeaderboard() {
+        game.startNewRound(points: 100)
+        XCTAssertNotEqual(game.score, 0)
+        XCTAssertNotEqual(game.round, 1)
+        XCTAssertEqual(game.leaderboardEntries[0].score, 100)
+        game.cleanLeaderboard()
+        XCTAssertEqual(game.leaderboardEntries.isEmpty, true)
+    }
+
 }

@@ -26,6 +26,7 @@ struct TopView: View {
         HStack {
             Button(action: {
                 game.restart()
+                game.cleanLeaderboard()
             }) {
                 RoundedImageViewStroked(systemName: "arrow.counterclockwise")
             }
