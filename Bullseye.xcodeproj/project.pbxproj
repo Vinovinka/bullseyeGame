@@ -21,7 +21,6 @@
 		E2BA29F228F1B63700D2623D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA29F128F1B63700D2623D /* Constants.swift */; };
 		E2BA29F428F417F800D2623D /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA29F328F417F800D2623D /* LeaderboardView.swift */; };
 		E2DE614928EDCEE000ACE03A /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE614828EDCEE000ACE03A /* BullseyeTests.swift */; };
-		E2F1DE2128FFD97B00629924 /* BullseyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE2028FFD97B00629924 /* BullseyeUITests.swift */; };
 		E2F1DE2D29007D7A00629924 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE2C29007D7A00629924 /* BaseTestCase.swift */; };
 		E2F1DE2F29015EEA00629924 /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE2E29015EEA00629924 /* GameUITests.swift */; };
 		E2F1DE322902722200629924 /* CustomUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1DE312902722200629924 /* CustomUIElement.swift */; };
@@ -69,7 +68,6 @@
 		E2DE614628EDCEE000ACE03A /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DE614828EDCEE000ACE03A /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		E2F1DE1E28FFD97B00629924 /* BullseyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2F1DE2028FFD97B00629924 /* BullseyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeUITests.swift; sourceTree = "<group>"; };
 		E2F1DE2C29007D7A00629924 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		E2F1DE2E29015EEA00629924 /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		E2F1DE312902722200629924 /* CustomUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIElement.swift; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 		E2F1DE2B29007D4300629924 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E2F1DE2028FFD97B00629924 /* BullseyeUITests.swift */,
 				E2F1DE2E29015EEA00629924 /* GameUITests.swift */,
 			);
 			path = Tests;
@@ -424,7 +421,6 @@
 				E2F1DE402902B87A00629924 /* Matchers.swift in Sources */,
 				E2F1DE3D2902786E00629924 /* GameSteps.swift in Sources */,
 				E2F1DE342902729300629924 /* ElementExtensions.swift in Sources */,
-				E2F1DE2128FFD97B00629924 /* BullseyeUITests.swift in Sources */,
 				E2F1DE442905762F00629924 /* LeaderboardPage.swift in Sources */,
 				E2F1DE322902722200629924 /* CustomUIElement.swift in Sources */,
 				E2F1DE36290272FA00629924 /* Timeout.swift in Sources */,
